@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit Kualitas Produk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Audit Kualitas Produk</h2>
+    <form id="auditForm" action="save_audit.php" method="POST">
+        
+        <label>Tanggal Audit</label>
+        <input type="date" name="audit_date" required>
+
+        <label>Auditor</label>
+        <input type="text" name="auditor" placeholder="Nama auditor" required>
+
+        <label>Nama Produk</label>
+        <input type="text" name="product_name" placeholder="Nama produk" required>
+
+        <label>Model / Versi</label>
+        <input type="text" name="model_version" placeholder="Model atau versi produk" required>
+
+        <p>Apakah tampilan dan kemasan produk memenuhi standar yang ditetapkan?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="appearance_quality" value="Memuaskan" required> Memuaskan</label>
+            <label><input type="radio" name="appearance_quality" value="Perlu Perbaikan"> Perlu Perbaikan</label>
+            <label><input type="radio" name="appearance_quality" value="Tidak Memuaskan"> Tidak Memuaskan</label>
+        </div>
+
+        <p>Apakah produk berfungsi atau bekerja sesuai yang diharapkan?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="function_quality" value="Memuaskan" required> Memuaskan</label>
+            <label><input type="radio" name="function_quality" value="Perlu Perbaikan"> Perlu Perbaikan</label>
+            <label><input type="radio" name="function_quality" value="Tidak Memuaskan"> Tidak Memuaskan</label>
+        </div>
+
+        <p>Apakah kualitas material sesuai dengan standar?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="material_quality" value="Memuaskan" required> Memuaskan</label>
+            <label><input type="radio" name="material_quality" value="Perlu Perbaikan"> Perlu Perbaikan</label>
+            <label><input type="radio" name="material_quality" value="Tidak Memuaskan"> Tidak Memuaskan</label>
+        </div>
+
+        <p>Apakah dimensi dan spesifikasi produk sudah benar?</p>
+        <div class="radio-group">
+            <label><input type="radio" name="dimension_quality" value="Memuaskan" required> Memuaskan</label>
+            <label><input type="radio" name="dimension_quality" value="Perlu Perbaikan"> Perlu Perbaikan</label>
+            <label><input type="radio" name="dimension_quality" value="Tidak Memuaskan"> Tidak Memuaskan</label>
+        </div>
+
+        <p>Kualitas Produk Secara Keseluruhan</p>
+        <div class="radio-group">
+            <label><input type="radio" name="overall_quality" value="Memuaskan" required> Memuaskan</label>
+            <label><input type="radio" name="overall_quality" value="Perlu Perbaikan"> Perlu Perbaikan</label>
+            <label><input type="radio" name="overall_quality" value="Tidak Memuaskan"> Tidak Memuaskan</label>
+        </div>
+
+        <label>Rekomendasi untuk Perbaikan</label>
+        <textarea name="recommendation" rows="4" placeholder="Tulis rekomendasi perbaikan di sini..." required></textarea>
+
+        <button type="submit">Simpan Data Audit</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
