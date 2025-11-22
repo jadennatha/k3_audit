@@ -60,3 +60,55 @@ button {
 button:hover {
     background-color: #29486b;
 }
+
+.container.data-view {
+    width: 95%;
+    max-width: 1300px;
+}
+
+.btn-view-data {
+    display: inline-block;
+    background-color: #29486b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.btn-view-data:hover {
+    background-color: #1b3556;
+}
+
+
+/* 🔹 Tambahan Fix untuk Tampilan Tabel di view_data.php */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.logout-btn {
+    background-color: rgb(154, 22, 22);
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.logout-btn:hover {
+    background-color: #b90000;
+}
